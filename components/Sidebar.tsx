@@ -6,6 +6,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import React from "react";
+import Footer from "./Footer";
 
 type SidebarProps = {
   user: any; // Define the type of `user` properly according to your requirements
@@ -56,7 +57,7 @@ const Sidebar = ({ user }: SidebarProps) => {
         })}
         USER
       </nav>
-      FOOTER
+      <Footer user={user}/>
     </section>
   );
 };
